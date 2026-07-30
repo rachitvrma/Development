@@ -24,7 +24,7 @@
 
   # https://devenv.sh/basics/
   enterShell = ''
-    echo "c/c++ devenv ready: $(gcc --dumpversion), $(cmake --version | head -1)"
+    echo "c/c++ devenv ready: $(gcc -dumpversion), $(cmake --version | head -1)"
   '';
 
   packages = with pkgs; [
